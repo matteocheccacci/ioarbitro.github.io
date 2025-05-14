@@ -7,16 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="js/content.js" defer></script>
-  <!-- Icone social -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    // Funzione per rilevare i dispositivi mobili
+    function isMobileDevice() {
+      return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    }
+
+    // Reindirizza se è un dispositivo mobile
+    if (isMobileDevice()) {
+      window.location.href = "index_mobile.html";
+    }
+  </script>
 </head>
 <body>
 
   <header class="hero">
-    <!-- Primo logo a sinistra -->
     <img src="img/logo.png" alt="Logo" class="logo">
     
-    <!-- Secondo logo a destra -->
     <img src="img/logo2.png" alt="Logo 2" id="logo2">
     
     <div class="overlay">
@@ -51,7 +59,7 @@
   
   <footer class="footer">
     <div class="footer-content">
-      <p>&copy; 2025 Federazione Italiana Pallavolo - Comitato Territoriale di Varese</p>
+      <p>© 2025 Federazione Italiana Pallavolo - Comitato Territoriale di Varese</p>
       <p>Email: <a href="mailto:arbitri.varese@federvolley.it">arbitri.varese@federvolley.it</a> | <a href="mailto:comunicazioni.varese@federvolley.it">comunicazioni.varese@federvolley.it</a></p>
       <div class="social-icons">
         <a href="https://instagram.com/fipav_varese" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>

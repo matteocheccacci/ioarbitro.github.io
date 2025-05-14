@@ -23,7 +23,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url('img/bkg.jpg') center/cover no-repeat; 
+  background: url('img/bkg.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,14 +59,15 @@ body {
 }
 
 .explain {
-    font-size: 2.9rem;
-    color: white;
+  font-size: 2.9rem;
+  color: white;
 }
 
 .logo {
   width: 250px;
   height: auto;
-  position: absolute; /* Modificato da fixed a absolute */
+  position: absolute;
+  /* Modificato da fixed a absolute */
   top: 20px;
   left: 20px;
   z-index: 10;
@@ -75,7 +76,8 @@ body {
 #logo2 {
   width: 250px;
   height: auto;
-  position: absolute; /* Modificato da fixed a absolute */
+  position: absolute;
+  /* Modificato da fixed a absolute */
   top: 20px;
   right: 20px;
   z-index: 10;
@@ -173,8 +175,30 @@ footer {
   color: #ffffff;
 }
 
-/* Media Query per dispositivi mobili */
+/* Media Query per dispositivi mobili (CORREZIONE LOGHI) */
 @media screen and (max-width: 768px) {
+  .logo,
+  #logo2 {
+    width: 150px;
+    top: 10px;
+    /* Regola la posizione verticale */
+  }
+
+  .logo {
+    left: 10px;
+    /* Regola la posizione orizzontale */
+  }
+
+  #logo2 {
+    right: 10px;
+    /* Regola la posizione orizzontale */
+  }
+
+  .hero .overlay {
+    margin-top: 50px;
+    /* Regola il margine superiore dell'overlay per evitare sovrapposizioni */
+  }
+
   .info {
     height: 40vh;
   }
