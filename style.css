@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('fonts/Rajdhani-Regular.ttf') format('truetype');
+}
+
+:root {
+  --blu: #265180;
+  --azzurro: #00A4E4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  background-color: var(--blu);
+  overflow-x: hidden;
+}
+
+.hero {
+  height: 100vh;
+  background: url('img/bkg.jpg') center/cover no-repeat; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(38, 81, 128, 0.7);
+}
+
+.overlay {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /* margin-top: 200px;  Rimosso margin-top */
+  padding: 10px;
+}
+
+.campaign {
+  font-size: 5rem;
+  color: white;
+}
+
+.slogan {
+  font-size: 4rem;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.explain {
+    font-size: 2.9rem;
+    color: white;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  position: absolute; /* Modificato da fixed a absolute */
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+#logo2 {
+  width: 250px;
+  height: auto;
+  position: absolute; /* Modificato da fixed a absolute */
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.info {
+  position: relative;
+  height: 50vh;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s;
+}
+
+.info::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 164, 228, 0.6);
+}
+
+.info:hover::before {
+  background-color: rgba(0, 164, 228, 0.3);
+}
+
+.info .content {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+footer {
+  background-color: var(--azzurro);
+  padding: 2rem;
+  text-align: center;
+}
+
+#signup-button {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.2rem 2.5rem;
+  background-color: var(--blu);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+#signup-button:hover {
+  transform: scale(1.05);
+  background-color: #003366;
+}
+
+.footer {
+  background-color: #265180;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #00A4E4;
+  text-decoration: none;
+  margin: 0 0.2rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+/* Media Query per dispositivi mobili */
+@media screen and (max-width: 768px) {
+  .info {
+    height: 40vh;
+  }
+
+  .info .content {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
+  .campaign {
+    font-size: 3rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+}
