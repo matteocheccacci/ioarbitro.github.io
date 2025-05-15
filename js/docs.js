@@ -20,6 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://drive.google.com/file/d/1v7G8CtSI-aP16XQdpcFrN7wyg6_3BZgw/view?usp=drive_link",
             "lastUpdate": "15/05/2025"
         }
+    ],
+    "Pallavolo Indoor": [
+        {
+            "name": "Regole di Gioco 2021-2024 Versione 2",
+            "link": "https://drive.google.com/file/d/10QgposmnGgON3i9EW0T25qfz3de9L-jS/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Regole di Gioco 2021-2024 Versione 2 (con modifiche evidenziate)",
+            "link": "https://drive.google.com/file/d/1cCtGd4drBn5ON4JcdTG9FVgbDa9D95vS/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Casistica Ufficiale delle Regole di Gioco 2021-2024 Versione 2",
+            "link": "https://drive.google.com/file/d/1Y0OFiswt4ug-mRVG_qXVFufqJHr1SjuO/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Casistica Ufficiale delle Regole di Gioco 2021-2024 Versione 2 (con modifiche evidenziate)",
+            "link": "https://drive.google.com/file/d/1h9WRUCeVQD6Ej8DnbrFKa_Tx6nphGNuL/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Manuale del segnapunti addetto al referto cartaceo 2021-2022",
+            "link": "https://drive.google.com/file/d/1qYqD_l4A5a8nExXBJDUdNhaOG_FpB9xE/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        }
     ]
 };
 
