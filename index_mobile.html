@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="style_mobile.css">
   <script src="js/content.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+      function isMobileDevice() {
+      return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+      }
+      if (!isMobileDevice()) {
+      window.location.href = "index_mobile.html";
+      }
+</script>
 </head>
 <body>
 
@@ -46,9 +54,8 @@
   
   <footer class="footer">
     <div class="footer-content">
-      <p>© 2025 Federaziobne Italiana Pallavolo - Comitato Territoriale di Varese</p>
-      <p><a href="mailto:arbitri.varese@federvolley.it">arbitri.varese@federvolley.it</a></p>
-      <p><a href="mailto:comunicazioni@federvolleyvarese.it">comunicazioni@federvolleyvarese.it</a></p>
+      <p>© 2025 FIPAV - Comitato Territoriale di Varese</p>
+      <p>Email: <a href="mailto:arbitri.varese@federvolley.it">arbitri.varese@federvolley.it</a> | <a href="mailto:comunicazioni@federvolleyvarese.it">comunicazioni@federvolleyvarese.it</a></p>
       <div class="social-icons">
         <a href="https://instagram.com/fipav_varese" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://t.me/federvolleyvarese" target="_blank"><i class="fab fa-telegram"></i></a>
