@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageList = document.getElementById('page-list');
     const pages = [
         { name: "#ioarbitro", url: "index.html" },
-        { name: "Documenti", url: "docs.html" },
+        { name: "Documenti", url: "documents.html" },
+        { name: "Federvolley Varese", url: "https://www.federvolleyvarese.it"},
     ];
 
     pages.forEach(page => {
