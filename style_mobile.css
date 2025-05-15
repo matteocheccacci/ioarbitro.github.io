@@ -40,7 +40,7 @@ body {
 }
 
 .logo, #logo2 {
-  width: 120px;
+  width: 150px;
   position: absolute;
   top: 10px;
   z-index: 10;
