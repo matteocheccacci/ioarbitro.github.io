@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pageList = document.getElementById('page-list');
     const pages = [
         { name: "#ioarbitro", url: "index.html" },
-        { name: "Documenti Ufficiali di Gara", url: "docs.html" },
+        { name: "Documenti", url: "docs.html" },
     ];
 
     pages.forEach(page => {
