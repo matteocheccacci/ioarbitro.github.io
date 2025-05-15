@@ -175,29 +175,26 @@ footer {
   color: #ffffff;
 }
 
-/* Media Query per dispositivi mobili (CORREZIONE LOGHI) */
+/* Media Query per dispositivi mobili (CORREZIONE LOGHI) 
 @media screen and (max-width: 768px) {
   .logo,
   #logo2 {
     width: 150px;
     top: 10px;
-    /* Regola la posizione verticale */
   }
 
   .logo {
     left: 10px;
-    /* Regola la posizione orizzontale */
   }
 
   #logo2 {
     right: 10px;
-    /* Regola la posizione orizzontale */
   }
 
   .hero .overlay {
     margin-top: 50px;
-    /* Regola il margine superiore dell'overlay per evitare sovrapposizioni */
   }
+*/
 
   .info {
     height: 40vh;
@@ -219,4 +216,3 @@ footer {
   .slogan {
     font-size: 1.5rem;
   }
-}
