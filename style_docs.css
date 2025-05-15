@@ -9,6 +9,9 @@
     --grigio-chiaro: #f4f4f4;
     --testo-scuro: #333;
     --sfondo: url('img/bkg_white.jpg'); /*Percorso immagine di sfondo*/
+    /* Definisci anche i valori RGB per poter usare rgba() */
+    --blu-rgb: 38, 81, 128;
+    --azzurro-rgb: 0, 164, 228;
 }
 
 * {
@@ -29,7 +32,7 @@ body {
 }
 
 .header {
-    background-color: rgba(var(--blu-rgb, 38, 81, 128), 1); /* Trasparenza ultimo valore */
+    background-color: rgba(var(--blu-rgb), 1); /* Usa la variabile RGB */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -43,49 +46,55 @@ body {
     margin: 0 auto;
     padding: 1rem 20px; /* Aggiunto padding laterale */
     display: flex;
-    flex-direction: column; /* Dispone gli elementi verticalmente */
-    align-items: stretch; /* Allinea gli elementi in modo che occupino tutta la larghezza */
+    flex-direction: column; /* Imposta la direzione principale a colonna per mobile */
+    align-items: center; /* Centra gli elementi orizzontalmente su mobile */
 }
 
 .header .header-top {
     display: flex;
-    justify-content: space-between; /* Spazia i loghi e il titolo */
-    align-items: center; /* Allinea verticalmente i loghi e il titolo */
+    flex-direction: column; /* Imposta la direzione a colonna per mobile */
+    justify-content: center; /* Centra verticalmente su mobile */
+    align-items: center; /* Centra orizzontalmente su mobile */
     margin-bottom: 10px; /* Spazio tra la parte superiore e la navbar */
     width: 100%; /* Occupare tutta la larghezza */
+    text-align: center; /* Centra il testo su mobile */
 }
 
 .header .logo-container {
     display: flex;
-    align-items: center;
+    flex-direction: row; /* Rimane in riga anche su mobile per i loghi */
+    align-items: center; /* Centra i loghi verticalmente */
+    margin-bottom: 10px; /* Spazio tra i loghi e il titolo su mobile */
+    justify-content: center; /* Centra i loghi orizzontalmente su mobile */
 }
 
 .header .logo {
-    width: 200px; /* Ridimensiona il logo */
+    width: 150px; /* Ridimensiona il logo per mobile */
     height: auto;
-    margin-right: 10px;
+    margin-right: 10px; /* Aggiunge spazio tra i loghi su mobile */
+    margin-bottom: 0; /* Rimuove il margine inferiore su mobile */
 }
 
 .logo2 {
-    width: 200px;
+    width: 150px; /* Ridimensiona il secondo logo per mobile */
     height: auto;
-    margin-right: 10px;
+    margin-right: 0; /* Rimuove il margine a destra su mobile */
 }
 
 .header h1 {
-    font-size: 2rem;
-    margin: 0; /* Rimuove margini predefiniti */
-    text-align: right; /* Allinea il titolo a destra */
+    font-size: 1.5rem; /* Riduci la dimensione del titolo per mobile */
+    margin: 0.5rem 0; /* Aggiunge un po' di margine sopra e sotto il titolo */
+    text-align: center; /* Forza l'allineamento al centro su mobile */
 }
 
 .main-nav {
-    display: none; /* Nasconde la navigazione principale */
+    display: none; /* Nasconde la navigazione principale (potrebbe essere mostrata con un menu a tendina su mobile) */
 }
 
 .secondary-nav {
-    background-color: rgba(var(--azzurro-rgb, 0, 164, 228), 0.15); /* Sfondo leggero */
+    background-color: rgba(var(--azzurro-rgb), 0.15); /* Usa la variabile RGB */
     width: 100%;
-    padding: 0.5rem 20px;
+    padding: 0.5rem 10px; /* Riduci il padding laterale su mobile */
     margin-bottom: 1rem;
     text-align: center; /* Centra la navigazione secondaria */
     border-radius: 10px;
@@ -95,12 +104,14 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block; /* Permette di centrare la lista */
+    display: flex; /* Usa flexbox per la navigazione su mobile */
+    overflow-x: auto; /* Permette lo scorrimento orizzontale se ci sono troppi elementi */
+    justify-content: center; /* Centra gli elementi della lista */
 }
 
 .secondary-nav ul li {
-    display: inline; /* Dispone gli elementi in linea */
-    margin: 0 1rem;
+    display: inline-block; /* Mantiene gli elementi in linea ma permette margini */
+    margin: 0 0.5rem; /* Riduci il margine laterale su mobile */
 }
 
 .secondary-nav ul li:first-child {
@@ -112,28 +123,30 @@ body {
 }
 
 .secondary-nav ul li a {
-    color: var(--azzurrro);
+    color: white; /* Imposta il colore del testo a bianco */
     text-decoration: none;
-    padding: 0.3rem 0.7rem;
+    padding: 0.3rem 0.5rem; /* Riduci il padding sui link di navigazione */
     border-radius: 5px;
     transition: background-color 0.3s;
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
 }
 
 .secondary-nav ul li a:hover {
     background-color: var(--azzurro);
+    color: white; /* Mantiene il testo bianco al passaggio del mouse */
 }
 
 .main-content {
-    padding: 2rem 20px;
-    max-width: 1200px;
-    margin: 20px auto;
+    padding: 1.5rem 15px; /* Riduci il padding laterale su mobile */
+    max-width: 100%; /* Occupare tutta la larghezza su mobile */
+    margin: 15px auto; /* Riduci il margine superiore e inferiore */
     background-color: rgba(255, 255, 255, 1); /* Ultimo valore trasparenza */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Leggera riduzione dell'ombra */
     border-radius: 8px;
 }
 
 .container {
-    padding: 20px;
+    padding: 15px; /* Riduci il padding interno del container su mobile */
 }
 
 .document-list h2 {
@@ -141,26 +154,29 @@ body {
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--azzurro);
     padding-bottom: 0.5rem;
+    font-size: 1.3rem; /* Riduci la dimensione del titolo della sezione */
+    text-align: center; /* Centra il titolo della sezione */
 }
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Riduci il margine inferiore dei gruppi di form */
 }
 
 .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem; /* Riduci il margine inferiore delle label */
     color: var(--testo-scuro);
+    font-size: 0.9rem; /* Riduci la dimensione del testo delle label */
 }
 
 .form-group input[type="text"],
 .form-group select,
 .form-group input[type="file"] {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.6rem; /* Riduci il padding degli input */
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Riduci la dimensione del testo degli input */
 }
 
 .document-list ul {
@@ -169,8 +185,9 @@ body {
 }
 
 .document-list ul li {
-    padding: 0.7rem 0;
+    padding: 0.5rem 0; /* Riduci il padding verticale degli elementi della lista */
     border-bottom: 1px solid #eee;
+    font-size: 0.95rem; /* Leggera riduzione della dimensione del testo */
 }
 
 .document-list ul li:last-child {
@@ -178,7 +195,7 @@ body {
 }
 
 .document-list ul li a {
-    color: var(--blu);
+    color: var(--blu); /* Rimane blu nel contenuto principale */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -190,12 +207,12 @@ body {
 }
 
 .footer {
-    background-color: rgba(var(--blu-rgb, 38, 81, 128), 1); /* Ultimo valore trasparenza sezione */
+    background-color: rgba(var(--blu-rgb), 1); /* Usa la variabile RGB */
     color: white;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem; /* Riduci il padding verticale del footer */
     text-align: center;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    font-size: 0.8rem; /* Riduci la dimensione del testo del footer */
+    margin-top: 1.5rem; /* Riduci il margine superiore del footer */
 }
 
 .footer a {
@@ -209,17 +226,139 @@ body {
 }
 
 .social-icons {
-    margin-top: 1rem;
+    margin-top: 0.8rem; /* Riduci il margine superiore delle icone social */
 }
 
 .social-icons a {
-    font-size: 1.3rem;
-    margin: 0 0.5rem;
+    font-size: 1.1rem; /* Riduci la dimensione delle icone social */
+    margin: 0 0.3rem; /* Riduci il margine delle icone social */
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
 .social-icons a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1); /* Riduci leggermente l'effetto hover */
     color: #ffffff;
+}
+
+/* Media query per schermi più grandi (es. tablet e desktop) */
+@media (min-width: 768px) {
+    .header .container {
+        flex-direction: column; /* Cambia a colonna su desktop */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .header-top {
+        display: flex; /* Ritorna a flex per la disposizione orizzontale degli elementi */
+        flex-direction: row; /* Gli elementi (loghi e titolo) sono in riga */
+        justify-content: space-between; /* Spazia gli elementi il più possibile */
+        align-items: center; /* Allinea verticalmente gli elementi */
+        text-align: left;
+        margin-bottom: 1rem; /* Aggiunge spazio sotto la riga */
+        width: 100%;
+    }
+
+    .header .logo-container {
+        display: flex; /* Mantiene flex per l'allineamento interno dei loghi */
+        flex-direction: row;
+        margin-bottom: 0;
+        justify-content: flex-start; /* Allinea i loghi a sinistra */
+    }
+
+    .header .logo {
+        width: 200px;
+        margin-right: 10px; /* Spazio tra i loghi */
+    }
+
+    .logo2 {
+        width: 200px;
+        margin-right: 10px; /* Spazio a destra del secondo logo */
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        text-align: right; /* Allinea il titolo a destra */
+        margin: 0;
+    }
+
+    .secondary-nav {
+        padding: 0.5rem 20px;
+        background-color: rgba(var(--azzurro-rgb), 0.15);
+    }
+
+    .secondary-nav ul {
+        display: inline-block;
+        flex-direction: row;
+        overflow-x: visible;
+        justify-content: center;
+    }
+
+    .secondary-nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+
+    .secondary-nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.3rem 0.7rem;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .secondary-nav ul li a:hover {
+        background-color: var(--azzurro);
+        color: white;
+    }
+
+    .main-content {
+        padding: 2rem 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .document-list h2 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group select,
+    .form-group input[type="file"] {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .document-list ul li {
+        padding: 0.7rem 0;
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 1rem;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .social-icons {
+        margin-top: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
 }
