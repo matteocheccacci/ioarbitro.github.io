@@ -131,6 +131,52 @@ document.addEventListener('DOMContentLoaded', function() {
             "link": "https://drive.google.com/file/d/1Djx6IBpN7TgSEkjWuR_AJIrybuyM6y_4/view?usp=drive_link",
             "lastUpdate": "15/05/2025"
         }
+    ],
+    "Beach Volley": [
+        {
+            "name": "Regole di Gioco Beach Volley 2021-2024",
+            "link": "https://drive.google.com/file/d/1TjSUSlIawZtVi4breNbKZ5TEKntTSxQA/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Casistica Ufficiale delle Regole di Gioco Beach Volley 2023",
+            "link": "https://drive.google.com/file/d/1aDvJEdIp03n7CItO4BgoQKwXiUT7bPXA/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Linee guida per arbitrare il Beach Volley 2022-2023",
+            "link": "https://drive.google.com/file/d/1ByezXnJnYx6lePTdRiH8jcP3L-YRztHo/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Istruzioni per la compilazione Referto di gara Beach Volley 2022-2023",
+            "link": "https://drive.google.com/file/d/1Xvv1ePZi3ms0yfObAdDV2K32zO6kfS39/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Referto di Gara Beach Volley",
+            "link": "https://drive.google.com/file/d/1PX_qp5lW92fPB_B_z8Jci_x0hAvI_Gcw/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        }
+    ],
+    "Sitting Volley": [
+        {
+            "name": "Regole di Gioco Sitting Volley 2022-2024",
+            "link": "https://drive.google.com/file/d/1EFRry3OkKPTWgY1LrCyJ8HsLA7CYsmzr/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        },
+        {
+            "name": "Casistica Ufficiale Sitting Volley",
+            "link": "https://drive.google.com/file/d/1Iv73JWguHXAaLnIfac5rd0f49SBn8DUs/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        }
+    ],
+    "Snow Volley": [
+        {
+            "name": "Regole di Gioco Snow Volley 2022-2024",
+            "link": "https://drive.google.com/file/d/1Zf-iyhr17HwlkA7zGq0t0nyhfSyY6Iwp/view?usp=drive_link",
+            "lastUpdate": "15/05/2025"
+        }
     ]
 };
 
