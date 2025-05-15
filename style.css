@@ -23,7 +23,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url('img/bkg.jpg') center/cover no-repeat;
+  background: url('img/bkg_mobile.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -43,19 +43,18 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
-  /* margin-top: 200px;  Rimosso margin-top */
   padding: 10px;
 }
 
 .campaign {
-  font-size: 5rem;
+  font-size: 1rem;
   color: white;
 }
 
 .slogan {
   font-size: 3.2rem;
   margin-top: 0.5rem;
-  color: #ffffff;
+  color: white;
 }
 
 .explain {
