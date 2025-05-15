@@ -5,94 +5,58 @@
   <title>#ioarbitro | Federvolley Varese</title>
   <link rel="icon" href="img/favicon.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: 'Rajdhani', sans-serif;
-      color: white;
-      background-color: #265180;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .hero {
-      background: url('img/bkg.jpg') center/cover no-repeat;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2rem;
-    }
-
-    .hero p {
-      font-size: 0.8rem;
-    }
-
-    .info {
-      background-color: rgba(0, 164, 228, 0.6);
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    .info p {
-      font-size: 1rem;
-      text-align: center;
-    }
-
-    #signup-button {
-      background-color: #003366;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      display: inline-block;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .footer {
-      background-color: #265180;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 0.8rem;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style_mobile.css">
+  <script src="js/content.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="hero">
-    <h1>#ioarbitro</h1>
-    <p>Vuoi vivere la pallavolo da un punto di vista diverso?</p>
-    <p>Corso Arbitri Federali 2025/2026</p>
-  </div>
 
-  <div class="info">
-    <p>INDENNITÀ DI 19€ A PARTITA</p>
-  </div>
-  <div class="info">
-    <p>RIMBORSO CHILOMETRICO</p>
-  </div>
-  <div class="info">
-    <p>CREDITO FORMATIVO SCOLASTICO</p>
-  </div>
-  <div class="info">
-    <p>OPPORTUNITÀ DI CARRIERA</p>
-  </div>
-  <div class="info">
-    <p>DOPPIO TESSERAMENTO ATLETA + ARBITRO</p>
-  </div>
+  <header class="hero">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <img src="img/logo2.png" alt="Logo 2" id="logo2">
+    
+    <div class="overlay">
+      <h1 class="campaign">#ioarbitro</h1>
+      <h3 class="slogan">Vivi la pallavolo da un'altra prospettiva!</h3>
+      <h2 class="explain">Corso Arbitri Federali 2025/2026<br>Comitato di Varese</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="info" style="--img: url('../img/bkg0.jpg')">
+      <div class="content">INDENNITÀ DI 19€ A PARTITA</div>
+    </section>
+    <section class="info" style="--img: url('../img/bkg1.jpg')">
+      <div class="content">RIMBORSO CHILOMETRICO</div>
+    </section>
+    <section class="info" style="--img: url('../img/bkg2.jpg')">
+      <div class="content">CREDITO FORMATIVO SCOLASTICO</div>
+    </section>
+    <section class="info" style="--img: url('../img/bkg3.jpg')">
+      <div class="content">OPPORTUNITÀ DI CARRIERA</div>
+    </section>
+    <section class="info" style="--img: url('../img/bkg4.jpg')">
+      <div class="content">DOPPIO TESSERAMENTO ATLETA + ARBITRO</div>
+    </section>
+  </main>
 
   <footer>
     <button id="signup-button">ISCRIVITI ORA!</button>
   </footer>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Federaziobne Italiana Pallavolo - Comitato Territoriale di Varese</p>
+      <p><a href="mailto:arbitri.varese@federvolley.it">arbitri.varese@federvolley.it</a></p>
+      <p><a href="mailto:comunicazioni@federvolleyvarese.it">comunicazioni@federvolleyvarese.it</a></p>
+      <div class="social-icons">
+        <a href="https://instagram.com/fipav_varese" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://t.me/federvolleyvarese" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="https://facebook.com/federvolleyvarese" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@federvolley.varese" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
 
-  <div class="footer">
-    <p>© 2025 Federazione Italiana Pallavolo - Comitato Territoriale di Varese</p>
-  </div>
 </body>
 </html>
