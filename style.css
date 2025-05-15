@@ -47,13 +47,13 @@ body {
 }
 
 .campaign {
-  font-size: 3rem;
+  font-size: 6rem;
   color: white;
 }
 
 .slogan {
-  font-size: 3.2rem;
-  margin-top: 0.5rem;
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
   color: white;
 }
 
@@ -174,27 +174,6 @@ footer {
   color: #ffffff;
 }
 
-/* Media Query per dispositivi mobili (CORREZIONE LOGHI) 
-@media screen and (max-width: 768px) {
-  .logo,
-  #logo2 {
-    width: 150px;
-    top: 10px;
-  }
-
-  .logo {
-    left: 10px;
-  }
-
-  #logo2 {
-    right: 10px;
-  }
-
-  .hero .overlay {
-    margin-top: 50px;
-  }
-*/
-
   .info {
     height: 40vh;
   }
@@ -206,12 +185,4 @@ footer {
 
   .hero {
     padding: 15px;
-  }
-
-  .campaign {
-    font-size: 3rem;
-  }
-
-  .slogan {
-    font-size: 1.5rem;
   }
