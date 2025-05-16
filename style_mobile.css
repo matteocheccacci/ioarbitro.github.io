@@ -1,6 +1,16 @@
 @font-face {
-  font-family: 'Rajdhani';
+  font-family: 'Rajdhani Regular';
   src: url('fonts/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani SemiBold';
+  src: url('fonts/Rajdhani-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani Bold';
+  src: url('fonts/Rajdhani-Bold.ttf') format('truetype');
 }
 
 :root {
@@ -19,6 +29,14 @@ body {
   color: white;
   background-color: var(--blu);
   overflow-x: hidden;
+}
+
+body h1 {
+  font-family: 'Rajdhani Bold';
+}
+
+body h2 h3 {
+  font-family: 'Rajdhani SemiBold';
 }
 
 .hero {
@@ -85,6 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Rajdhani Bold';
 }
 
 .info::before {
@@ -135,6 +154,7 @@ footer {
   padding: 1rem;
   text-align: center;
   font-size: 0.9rem;
+  font-family: 'Rajdhani SemiBold';
 }
 
 .footer a {

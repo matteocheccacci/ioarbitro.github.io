@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: "#ioarbitro", url: "index.html" },
         { name: "Documenti", url: "documents.html" },
         { name: "Federvolley Varese", url: "https://www.federvolleyvarese.it"},
+        { name: "Fipavonline Login", url: "https://fipavonline.it/login"},
     ];
 
     pages.forEach(page => {

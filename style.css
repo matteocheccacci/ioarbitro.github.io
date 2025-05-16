@@ -31,6 +31,18 @@ body {
   overflow-x: hidden;
 }
 
+body h1 {
+  font-family: 'Rajdhani Bold';
+}
+
+body h2 h3 {
+  font-family: 'Rajdhani SemiBold';
+}
+
+body p {
+  font-family: 'Rajdhani SemiBold';
+}
+
 .hero {
   height: 100vh;
   background: url('img/bkg.jpg') center/cover no-repeat;
@@ -57,20 +69,17 @@ body {
 }
 
 .campaign {
-  font-family: 'Rajdhani Bold';
   font-size: 6rem;
   color: white;
 }
 
 .slogan {
-  font-family: 'Rajdhani SemiBold';
   font-size: 2.2rem;
   margin-top: 1.5rem;
   color: white;
 }
 
 .explain {
-  font-family: 'Rajdhani SemiBold';
   font-size: 2.1rem;
   color: white;
 }
@@ -120,7 +129,7 @@ body {
 
 .info .content {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-family: 'Rajdhani Bold';
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -159,7 +168,6 @@ footer {
   padding: 2rem 1rem;
   text-align: center;
   font-size: 1rem;
-  font-family: 'Rajdhani SemiBold';
 }
 
 .footer a {
