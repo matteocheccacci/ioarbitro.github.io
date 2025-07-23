@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const pageList = document.getElementById('page-list');
     const pages = [
-        { name: "#ioarbitro", url: "index.html" },
-        { name: "Documenti", url: "documents.html" },
+        { name: "#ioarbitro", url: "index" },
+        { name: "Documenti", url: "documents" },
         { name: "Federvolley Varese", url: "https://www.federvolleyvarese.it"},
         { name: "Fipavonline Login", url: "https://fipavonline.it/login"},
     ];

@@ -1,5 +1,5 @@
 // js/content.js
-const corsoLink = "https://forms.office.com/r/0c8Vek4A6z";
+const corsoLink = "https://docs.google.com/forms/d/e/1FAIpQLSdtBawvUb9IuE-jcBjp6vnfvHvZ9ci_EBLR4YGvstx_5lfzQw/viewform";
 
 window.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("signup-button");
